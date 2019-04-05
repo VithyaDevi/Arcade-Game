@@ -1,0 +1,208 @@
+/* CSS styling - Start */
+body {
+    text-align: center;
+    background: url('../images/backgroundforest.jpg');
+}
+
+
+.header {
+    color: rgb(248, 234, 234);
+    animation-name: header;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+    animation-duration: .75s;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+.header h1:hover, button:hover {
+    animation-name: button;
+    -webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: .90s;
+}
+
+
+.start-game h1{
+    font-weight: bold;
+    color: #f860c5;
+    text-shadow: 2px 2px 6px rgb(9, 10, 0);
+}
+
+
+.start-game h2{
+    font-weight: bold;
+    color: #0fe6ee;
+    text-shadow: 2px 2px 6px rgb(9, 10, 0);
+}
+
+
+.style-challenge{
+    font-style: italic;
+}
+
+
+canvas{
+    margin-top: -3.5em;
+}
+
+
+.game-starter h2 {
+    margin-bottom: 0;
+    color: azure;
+}
+
+
+.game-starter .char-image.active {
+    background: url(../images/Selector.png);
+}
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    width: 505px;
+    height: 555px;
+    position: absolute;
+    top: 290px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+
+.start-game {
+    position: absolute;
+    background: url('../images/frog.jpg');
+    color: rgb(249, 250, 245);
+    border-radius: 15px; 
+    left: 0;
+    right: 0;
+    top: 110px;
+    width: 470px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 2px 2px 6px rgb(243, 58, 11);
+}
+
+
+.start-game button {
+    background-color: rgb(39, 204, 154);
+    border: none;
+    border-radius: 15px;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: rgb(247, 244, 244);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    text-shadow: 2px 3px 6px rgb(15, 1, 12);
+}
+
+
+.hide {
+	visibility: hidden;
+	opacity: 0 !important;
+}
+
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+
+.game-over {
+    font-family: 'Alegreya', serif;
+    position: absolute;
+    background: url('../images/endgamebg.jpg');
+    border-radius: 5px; 
+    left: 0;
+    right: 0;
+    top: 200px;
+    width: 380px;
+    height: 240px;
+    margin: 0 auto;
+    padding: 3em 3em;
+    color: rgb(211, 226, 72);
+    visibility: hidden;
+}
+
+
+.game-over button {
+    background-color: rgb(102, 224, 53);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: rgb(8, 1, 1);
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+
+.winner {
+    font-family: 'Gloria Hallelujah', cursive;
+    position: absolute;
+    border-radius: 5px; 
+    left: 0;
+    right: 0;
+    top: 153px;
+    width: 500px;
+    height: 390px;
+    margin: 0 auto;
+    padding: 3em 3em;
+    color: rgb(15, 1, 1);
+    visibility: hidden;
+    background: linear-gradient(160deg, #f860c5 0%, #68bff1 50%, #9b4eda 100%);
+}
+
+
+.winner button {
+    background-color: rgb(230, 157, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: rgb(14, 1, 1);
+    margin-top: 2em;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+}
+
+/* CSS Styling - End */
+
+
+/* Animations START */
+@keyframes header {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(2.0, 2.0, 2.0);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+
+@keyframes button {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/* Animations END */

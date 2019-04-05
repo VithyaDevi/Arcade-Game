@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+</head>
+<body>
+    <!-- Game header -->
+    <div class="header">
+        <h1 class="game-title">ARCADE GAME</h1>
+    </div>
+
+    <!-- Choosing the characters -->
+    <section class="game-starter">
+            <h2>Choose the Player</h2>
+            <img class="char-image" src="images/char-boy.png" data-image="images/char-boy.png">
+            <img class="char-image" src="images/char-cat-girl.png" data-image="images/char-cat-girl.png">
+            <img class="char-image" src="images/char-horn-girl.png" data-image="images/char-horn-girl.png">
+            <img class="char-image" src="images/char-pink-girl.png" data-image="images/char-pink-girl.png">
+            <img class="char-image" src="images/char-princess-girl.png" data-image="images/char-princess-girl.png">
+    </section>
+
+    <!-- darken overlay -->
+    <div class="overlay"></div>
+
+    <!-- Instruction modal -->
+    <div class="start-game">
+            <h1>Welcome to the Arcade Game</h1>
+            <h2>---- INSTRUCTIONS ----</h2>
+            <h3>USE THE CONTROLS : Up ,  Down,  Left,  Right.</h3>
+            <h3>Player should get to the water at the top without colliding the bugs</h3>
+            <h3>If player hits the bugs he will lose 50 points</h3>
+            <h2>---- CHALLENGE ----</h2>
+            <h3 class="style-challenge">Can you get 500 points without losing your lives?</h3>
+            <h3 class="style-challenge">You only have 3 lives.</h3>
+            <h3 class="style-challenge">Good luck !</h3>
+            <button onclick="startGame()"> Play Game </button>
+    </div>
+    
+    <!-- modal for when player looses all lives -->
+    <div id="gameover" class="game-over">
+            <h1>Game Over !!!</h1>
+            <h1>Well Done</h1>
+            <h1>You lost all 3 lives</h1>
+            <button onclick="resetGame()"> Play Again </button>
+    </div>
+    
+    <!-- Winner modal -->
+    <div class="winner">
+            <h1>CONGRATULATIONS !!!</h1>
+            <h1>You're a Winner 🎉 🎉</h1>
+            <h2>You scored 500 points</h2>
+            <h3>Want to continue playing?</h3>
+            <button onclick="resetGame()"> Play Again </button>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
