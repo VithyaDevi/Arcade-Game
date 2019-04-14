@@ -20,6 +20,5 @@
 - Stylings are done is style.css
 - app.js contains game behavior code
 - engine.js and resources.js contains game engine and rendering.
->>>>>>> f27d1a13c09ccf884d6b60ccb8e030c514c61790
 
 
