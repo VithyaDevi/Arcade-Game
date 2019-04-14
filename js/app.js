@@ -54,19 +54,18 @@ function winGame(){
 
 //If player scored 500 points then he wins
 function checkpoints(){
-    if(playerPoints >= 100){
+    if(playerPoints >= 500){
         winGame();
     }
 }
 
 
-//Check whether the player and the bug collide
 function checkCollisions() {
     allEnemies.forEach(function(enemy) {
         if (player.x < enemy.x + enemy.width &&
             player.x + player.width > enemy.x &&
             player.y < enemy.y + enemy.height &&
-            player.height + player.y > enemy.y) {               
+            player.height + player.y > enemy.y) {      
             player.y = 390; //player to start position
             alllives.pop(); //reduce lives
             if(playerPoints >= 50){
@@ -128,8 +127,11 @@ var Player = function(x, y){
 };
 
 
+
 Player.prototype.update = function(dt){
     return this.y;
+    //playerX = this.x;
+    //playerY =  this.y;
 };
 
 
