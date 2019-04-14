@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Classic Arcade Game 
-=======
 # Classic Arcade Game
 
 ## Instructions
@@ -10,6 +7,9 @@
 - Player should get to the water at the top without colliding the bugs.
 - If player hits the bugs, 50 points will be reduced from the score.
 - Player only has 3 lives.
+
+## How to play the game
+- Click this link : https://vithyadevi.github.io/Arcade-game/
 
 ## Challenge
 
