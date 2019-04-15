@@ -62,7 +62,7 @@ function checkpoints(){
 
 function checkCollisions() {
     allEnemies.forEach(function(enemy) {
-        if (player.x < enemy.x + enemy.width &&
+        if (player.x < enemy.x + enemy.width + 15 &&  //collision bug changed
             player.x + player.width > enemy.x &&
             player.y < enemy.y + enemy.height &&
             player.height + player.y > enemy.y) {      
